@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rimsha Ijaz — Frontend Developer</title>
+<meta name="description" content="Portfolio of Rimsha Ijaz, frontend developer. Image Gallery, Music Player and Calculator built with HTML, CSS and JavaScript." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<!-- ===== Progress bar ===== -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ===== Nav ===== -->
+<header class="nav" id="nav">
+  <a href="#home" class="nav__brand">RI<span class="dot">.</span></a>
+  <nav class="nav__links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="home">
+  <div class="hero__grid"></div>
+  <p class="hero__eyebrow">FRONTEND DEVELOPER — Gujranwala, PK</p>
+  <h1 class="hero__title">
+    Rimsha Ijaz builds
+    <span class="hero__title-line">interfaces that <span class="highlight">respond</span>.</span>
+  </h1>
+  <p class="hero__sub">
+    I turn plain HTML, CSS and JavaScript into small working tools —
+    a calculator that never miscounts, a music player that keeps time,
+    a gallery that knows how to show off. Every project below runs live, right in the browser.
+  </p>
+  <div class="hero__cta">
+    <a href="#projects" class="btn btn--primary">See the work</a>
+    <a href="#contact" class="btn btn--ghost">Get in touch</a>
+  </div>
+
+  <!-- Signature: control deck of skill switches -->
+  <div class="deck" id="deck" aria-label="Core skills">
+    <div class="deck__switch" data-skill="HTML5"><span class="deck__led"></span><span class="deck__label">HTML5</span></div>
+    <div class="deck__switch" data-skill="CSS3"><span class="deck__led"></span><span class="deck__label">CSS3</span></div>
+    <div class="deck__switch" data-skill="JavaScript"><span class="deck__led"></span><span class="deck__label">JavaScript</span></div>
+    <div class="deck__switch" data-skill="Responsive UI"><span class="deck__led"></span><span class="deck__label">Responsive UI</span></div>
+    <div class="deck__switch" data-skill="Git & GitHub"><span class="deck__led"></span><span class="deck__label">Git &amp; GitHub</span></div>
+    <div class="deck__switch" data-skill="DOM APIs"><span class="deck__led"></span><span class="deck__label">DOM APIs</span></div>
+  </div>
+  <a href="#about" class="hero__scroll" aria-label="Scroll to About"><span></span></a>
+</section>
+
+<main>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="section__head reveal">
+      <p class="eyebrow">01 — About</p>
+      <h2>Small components, built properly.</h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__text reveal">
+        <p>
+          I'm Rimsha Ijaz, a frontend developer who likes proving ideas by shipping them.
+          Instead of only reading about how a calculator or an audio player works, I build one —
+          keypad logic, playback state, image transitions, all of it wired by hand in vanilla
+          HTML, CSS and JavaScript.
+        </p>
+        <p>
+          I care about layouts that hold together on any screen, interactions that feel
+          immediate, and code a teammate could read without a walkthrough. This site is itself
+          a project: semantic markup, a responsive grid, and motion that's there to guide —
+          not distract.
+        </p>
+      </div>
+      <div class="about__stats reveal">
+        <div class="stat">
+          <span class="stat__num">03</span>
+          <span class="stat__label">Frontend apps shipped</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">100%</span>
+          <span class="stat__label">Vanilla JS, no frameworks</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">01</span>
+          <span class="stat__label">Portfolio, built to be forked</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section class="section" id="skills">
+    <div class="section__head reveal">
+      <p class="eyebrow">02 — Skills</p>
+      <h2>What's on the workbench.</h2>
+    </div>
+    <div class="skills__grid">
+      <div class="skill-card reveal">
+        <span class="skill-card__icon">&lt;/&gt;</span>
+        <h3>HTML5</h3>
+        <p>Semantic, accessible structure — the skeleton every project starts from.</p>
+      </div>
+      <div class="skill-card reveal">
+        <span class="skill-card__icon">◆</span>
+        <h3>CSS3</h3>
+        <p>Flexbox, Grid, animation and responsive layout, written from scratch.</p>
+      </div>
+      <div class="skill-card reveal">
+        <span class="skill-card__icon">ƒ</span>
+        <h3>JavaScript</h3>
+        <p>DOM manipulation, events and app logic — the part that makes it work.</p>
+      </div>
+      <div class="skill-card reveal">
+        <span class="skill-card__icon">▤</span>
+        <h3>Responsive Design</h3>
+        <p>Mobile-first layouts that hold their shape from phone to desktop.</p>
+      </div>
+      <div class="skill-card reveal">
+        <span class="skill-card__icon">⌥</span>
+        <h3>Git &amp; GitHub</h3>
+        <p>Version control and deployment — GitHub Pages / Netlify ready.</p>
+      </div>
+      <div class="skill-card reveal">
+        <span class="skill-card__icon">✦</span>
+        <h3>UI/UX Basics</h3>
+        <p>Spacing, contrast and feedback states that make an interface feel finished.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="section" id="projects">
+    <div class="section__head reveal">
+      <p class="eyebrow">03 — Projects</p>
+      <h2>Three tools, three problems solved.</h2>
+    </div>
+
+    <div class="projects__grid">
+
+      <!-- Project 1: Image Gallery -->
+      <article class="project-card reveal" data-project="gallery">
+        <div class="project-card__preview project-card__preview--gallery">
+          <div class="stack-photo p1"></div>
+          <div class="stack-photo p2"></div>
+          <div class="stack-photo p3"></div>
+        </div>
+        <div class="project-card__body">
+          <p class="project-card__tag">01 / Image Gallery</p>
+          <h3>Responsive Image Gallery</h3>
+          <p>A filterable grid gallery with a lightbox viewer, smooth hover zoom, and keyboard-friendly navigation between images.</p>
+          <ul class="project-card__stack">
+            <li>HTML5</li><li>CSS Grid</li><li>JavaScript</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Live demo →</a>
+            <a href="#" class="link-arrow">Source code →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Music Player -->
+      <article class="project-card reveal" data-project="player">
+        <div class="project-card__preview project-card__preview--player">
+          <div class="eq"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="project-card__body">
+          <p class="project-card__tag">02 / Music Player</p>
+          <h3>Custom Music Player</h3>
+          <p>A playlist-driven audio player with play/pause, seek bar, track switching and a live progress indicator — no plugins.</p>
+          <ul class="project-card__stack">
+            <li>HTML5 Audio</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Live demo →</a>
+            <a href="#" class="link-arrow">Source code →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: Calculator -->
+      <article class="project-card reveal" data-project="calc">
+        <div class="project-card__preview project-card__preview--calc">
+          <div class="calc-keys">
+            <span>7</span><span>8</span><span>9</span>
+            <span>4</span><span>5</span><span>6</span>
+            <span>1</span><span>2</span><span class="on">+</span>
+          </div>
+        </div>
+        <div class="project-card__body">
+          <p class="project-card__tag">03 / Calculator</p>
+          <h3>JavaScript Calculator</h3>
+          <p>A fully working calculator with keyboard input support, operator chaining and clear/undo handling for edge cases.</p>
+          <ul class="project-card__stack">
+            <li>HTML5</li><li>CSS Grid</li><li>JavaScript</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link-arrow">Live demo →</a>
+            <a href="#" class="link-arrow">Source code →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== Resume ===== -->
+  <section class="section section--resume" id="resume">
+    <div class="resume__card reveal">
+      <div>
+        <p class="eyebrow">04 — Resume</p>
+        <h2>Want the full story on paper?</h2>
+        <p class="resume__sub">One page — education, skills and projects, ready to download or print.</p>
+      </div>
+      <a href="#" class="btn btn--primary" download>Download Resume (PDF)</a>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section" id="contact">
+    <div class="section__head reveal">
+      <p class="eyebrow">05 — Contact</p>
+      <h2>Let's build something.</h2>
+    </div>
+    <div class="contact__grid">
+      <form class="contact__form reveal" id="contactForm">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary">Send message</button>
+        <p class="contact__note" id="formNote"></p>
+      </form>
+      <div class="contact__side reveal">
+        <a class="contact__link" href="mailto:rimsha.ijaz@example.com">
+          <span class="contact__link-label">Email</span>
+          <span class="contact__link-value">rimsha.ijaz@example.com</span>
+        </a>
+        <a class="contact__link" href="#" target="_blank" rel="noopener">
+          <span class="contact__link-label">GitHub</span>
+          <span class="contact__link-value">github.com/rimshaijaz</span>
+        </a>
+        <a class="contact__link" href="#" target="_blank" rel="noopener">
+          <span class="contact__link-label">LinkedIn</span>
+          <span class="contact__link-value">linkedin.com/in/rimshaijaz</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Rimsha Ijaz. Built with HTML, CSS &amp; JavaScript.</p>
+  <a href="#home" class="footer__top">Back to top ↑</a>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
